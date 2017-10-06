@@ -1,15 +1,15 @@
 {
-  "name": "s3-volume-plugin",
-  "version": "1.0.0",
-  "description": "A docker volume plugin to communicate with S3",
+  "name": "regrid-volume-plugin",
+  "version": "0.1.0",
+  "description": "A docker volume plugin to communicate with ReGrid",
   "bin": {
-    "s3-docker-volume": "bin/www"
+    "regrid-docker-volume": "bin/www"
   },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ross Hendry (rhendry@googlemail.com)",
+  "author": "Fredrik Löwenhamn (fredrik.lowenhamn@gmail.com)",
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.15.1",

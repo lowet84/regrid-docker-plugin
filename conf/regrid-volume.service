@@ -1,0 +1,15 @@
+[Unit]
+Description=Docker volume plugin for ReGrid
+Before=docker.service
+After=network.target regrid-volume.socket
+Requires=regrid-volume.socket docker.service
+
+[Service]
+ExecStart=/usr/bin/regrid-docker-volume
+StandardOutput=syslog
+SyslogIdentifier=regridvolume
+User=root
+Group=docker
+
+[Install]
+WantedBy=multi-user.target
